@@ -16,9 +16,11 @@ public class PrimeNumber extends Number {
         
     }
     
-    /*
-    * Función que establece la cantidad de números primos solicitados,
+    /**
+    * @see Función que establece la cantidad de números primos solicitados,
     * al usar el parámetro quantity la podemos reutilizar
+    * @param quantity: cantidad de números primos que queremos encontrar
+    * @return retorna el array que contiene la cantidad de números primos solicitados
     */
     public int[] setPrimeNumbers(int quantity)
     {   

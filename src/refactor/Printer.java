@@ -9,16 +9,20 @@ package refactor;
  */
 public class Printer {
     
-    final int RR = 50;         
-    final int CC = 4;
+    protected int RR = 50;         
+    protected int CC = 4;
     
     public void Printer(){}
     
-    /*
-    * Imprime los números recibidos
-    *Param:
-    *numbers -> Objeto contenedor de los númenros a imprimir
-    *quantity -> Cantidad de elementos a imprimir
+    public void Printer( int rr, int cc){
+        this.RR = rr;
+        this.CC = cc;
+    }
+    
+    /**
+     * @see Imprime los números recibidos
+     * @param numbers: Objeto contenedor de los númenros a imprimir
+     * @param quantity: Cantidad de elementos a imprimir
     */
     public void printPrimeNumbers(int[] numbers, int quantity){
         int PAGENUMBER = 1;         
