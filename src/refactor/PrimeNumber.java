@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Clase Hija PrimeNumber (números primos) permite escalar las propiedades unicas de los números primos
  */
 package refactor;
 
@@ -18,9 +16,13 @@ public class PrimeNumber extends Number {
         
     }
     
-    public int[] setPrimeNumbers(int M)
+    /*
+    * Función que establece la cantidad de números primos solicitados,
+    * al usar el parámetro quantity la podemos reutilizar
+    */
+    public int[] setPrimeNumbers(int quantity)
     {   
-        int P[] = new int[M+1];
+        int P[] = new int[quantity + 1];
         P[1] = 2;
         boolean JPRIME;         
         int ORD = 2;         
@@ -29,7 +31,7 @@ public class PrimeNumber extends Number {
         int J = 1;         
         int K = 1;    
         int MULT[] = new int[ORDMAX+1];
-        while (K < M) {             
+        while (K < quantity) {             
             do {                 
                 J += 2;                 
                 if( J == SQUARE) {                     

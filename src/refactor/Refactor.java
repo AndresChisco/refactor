@@ -18,10 +18,10 @@ public class Refactor {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        final int M = 1000;
+        final int M = 950;
         PrimeNumber numeros = new PrimeNumber();
         Printer printer = new Printer();
         System.out.println(numeros.setPrimeNumbers(M).length);
-        printer.printPrimeNumbers(numeros.setPrimeNumbers(M));
+        printer.printPrimeNumbers(numeros.setPrimeNumbers(M), M);
     }
 }
