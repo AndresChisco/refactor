@@ -8,15 +8,21 @@ package refactor;
  * @author Andres
  */
 public class Printer {
+             
+    private int CC = 4;
+    private int RR = 50;
     
-    protected int RR = 50;         
-    protected int CC = 4;
+    //Constructor genérico
+    public Printer(){}
     
-    public void Printer(){}
-    
-    public void Printer( int rr, int cc){
-        this.RR = rr;
+    /**
+     * constructor que define la cantidad de columnas y elementos por columna
+     * @param cc cantidad de columnas
+     * @param rr cantidad de elementos por columna
+     */
+    public Printer( int cc, int rr){
         this.CC = cc;
+        this.RR = rr;
     }
     
     /**

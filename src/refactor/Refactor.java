@@ -17,10 +17,9 @@ public class Refactor {
              
     
     public static void main(String[] args) {
-        // TODO code application logic here
         final int M = 1000;
         PrimeNumber numeros = new PrimeNumber();
-        Printer printer = new Printer();
+        Printer printer = new Printer(4,50);
         System.out.println(numeros.setPrimeNumbers(M).length);
         printer.printPrimeNumbers(numeros.setPrimeNumbers(M), M);
     }
